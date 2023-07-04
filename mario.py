@@ -2,6 +2,7 @@ def main():
     print_square(3)
 
 
+'''
 def print_square(size):
     # For each row in square
     for i in range(size):
@@ -11,6 +12,12 @@ def print_square(size):
             print("#", end="")
         # End of row, start the new line
         print()
+'''
+
+
+def print_square(size):
+    for i in range(size):
+        print("#" * size)
 
 
 main()

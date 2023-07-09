@@ -1,3 +1,4 @@
+import pytest
 from calculate import square
 
 '''
@@ -24,9 +25,13 @@ def test_zero():
     assert square(0) == 0
 
 
+def test_str():
+    with pytest.raises(TypeError):
+        square("cat")
+
+
 # def main():
 #    test_square()
-
 
 '''
 def test_square():
